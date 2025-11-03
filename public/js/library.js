@@ -1,9 +1,9 @@
-const PLACEHOLDER = './assets/placeholder.png';
+const PLACEHOLDER = './public/assets/placeholder.png';
 let LIB = [];
 
 export async function initLibrary(){
   if(LIB.length) return;
-  const res = await fetch('./data/exercises.json');
+  const res = await fetch('./public/data/exercises.json');
   LIB = await res.json();
   const bodies = [...new Set(LIB.map(x=>x.bodyPart))].sort();
   const equips = [...new Set(LIB.map(x=>x.equipment))].sort();
@@ -32,7 +32,7 @@ function renderLibrary(){
     const row = document.createElement('div');
     row.className='exercise';
     row.innerHTML = `
-      <img src="${x.gif}" alt="${x.name_en}" onerror="this.onerror=null;this.src='./assets/placeholder.png';">
+      <img src="${x.gif}" alt="${x.name_en}" onerror="this.onerror=null;this.src='./public/assets/placeholder.png';">
       <div>
         <div><b>${x.name_en}</b> <span class="badge">${x.bodyPart}</span> <span class="badge">${x.equipment}</span></div>
       </div>
