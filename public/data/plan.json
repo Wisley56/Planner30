@@ -1,0 +1,35 @@
+{
+  "daysPerWeek": 3,
+  "schedule": [
+    "Mon",
+    "Wed",
+    "Fri"
+  ],
+  "notes": "RPE 6–8. Aumente carga quando completar as reps com boa técnica.",
+  "blocks": {
+    "A": [
+      "Agachamento Goblet",
+      "Supino com Halteres",
+      "Remada Curvada Halteres",
+      "RDL (Terra Romeno)",
+      "Prancha",
+      "Esteira Inclinação"
+    ],
+    "B": [
+      "Lunge (Avanço)",
+      "Desenvolvimento Ombros",
+      "Puxada na Polia",
+      "Ponte de Glúteos",
+      "Dead Bug",
+      "Bike Intervals"
+    ],
+    "C": [
+      "Agachamento Goblet",
+      "RDL (Terra Romeno)",
+      "Flexão de Braços",
+      "Remada Unilateral",
+      "Farmer Carry",
+      "Circuito Leve"
+    ]
+  }
+}

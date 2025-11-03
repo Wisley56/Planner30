@@ -1,0 +1,30 @@
+
+/* Planner30 base styles */
+:root{
+  --bg:#f7f7f7; --fg:#222; --card:#ffffff; --muted:#666; --accent:#1f8f3a; --line:#e6e6e6;
+}
+body.dark{ --bg:#111; --fg:#f2f2f2; --card:#181818; --muted:#aaa; --accent:#35c164; --line:#2a2a2a; }
+*{box-sizing:border-box}
+body{font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial; background:var(--bg); color:var(--fg); margin:0; padding:16px;}
+h1{margin:0 0 6px 0; font-size:22px;}
+.small{color:var(--muted); font-size:13px; margin-bottom:10px;}
+.container{max-width:900px; margin:0 auto;}
+.box{background:var(--card); padding:14px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.08); margin:10px 0; border:1px solid var(--line);}
+label{display:flex; align-items:center; gap:8px; margin:6px 0;}
+input[type="checkbox"]{transform:scale(1.25); accent-color:var(--accent);}
+select, input[type="number"], input[type="search"], textarea{width:100%; padding:10px; border-radius:10px; border:1px solid var(--line); background:transparent; color:var(--fg);}
+button{background:var(--accent); color:#fff; border:none; padding:12px 14px; border-radius:10px; font-weight:600; cursor:pointer;}
+button.ghost{background:transparent; color:var(--accent); border:1px solid var(--accent);}
+button:active{opacity:.85}
+.row{display:flex; gap:10px; flex-wrap:wrap;}
+.col{flex:1 1 240px;}
+.toggle{ display:inline-flex; align-items:center; gap:8px; padding:8px 10px; border:1px solid var(--line); border-radius:999px; background:var(--card); }
+a{color:var(--accent); text-decoration:none;}
+.exercise{display:flex; gap:10px; align-items:flex-start; margin:8px 0; border-top:1px dashed var(--line); padding-top:8px;}
+.exercise img{width:96px; height:96px; object-fit:cover; border-radius:10px; border:1px solid var(--line); background:#ddd;}
+canvas{width:100%; max-width:700px; height:220px; background:var(--card); border-radius:12px; border:1px solid var(--line);}
+.timer-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+@media(max-width:680px){ .timer-grid{grid-template-columns:1fr;} }
+.nav{display:flex; gap:8px; flex-wrap:wrap; margin:10px 0;}
+.hidden{display:none;}
+.badge{padding:4px 8px; border:1px solid var(--line); border-radius:999px; font-size:12px; color:var(--muted);}

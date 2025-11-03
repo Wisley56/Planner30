@@ -1,0 +1,38 @@
+[
+  {
+    "name_en": "Goblet Squat",
+    "bodyPart": "legs",
+    "equipment": "dumbbell",
+    "gif": "https://newlife.com.cy/wp-content/uploads/2019/11/23061301-Kettlebell-Goblet-Squat_Thighs_360.gif"
+  },
+  {
+    "name_en": "Dumbbell Bench Press",
+    "bodyPart": "chest",
+    "equipment": "dumbbell",
+    "gif": "https://newlife.com.cy/wp-content/uploads/2019/11/03191301-Dumbbell-Bench-Press_Chest_360.gif"
+  },
+  {
+    "name_en": "Lat Pulldown",
+    "bodyPart": "back",
+    "equipment": "cable",
+    "gif": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Lat-Pulldown.gif"
+  },
+  {
+    "name_en": "Romanian Deadlift",
+    "bodyPart": "hamstrings",
+    "equipment": "barbell",
+    "gif": "https://newlife.com.cy/wp-content/uploads/2019/11/03101301-Dumbbell-Romanian-Deadlift_Hamstrings_360.gif"
+  },
+  {
+    "name_en": "Plank",
+    "bodyPart": "core",
+    "equipment": "bodyweight",
+    "gif": "https://www.inspireusafoundation.org/wp-content/uploads/2022/10/forearm-plank.gif"
+  },
+  {
+    "name_en": "Walking Lunge",
+    "bodyPart": "legs",
+    "equipment": "dumbbell",
+    "gif": "https://newlife.com.cy/wp-content/uploads/2019/11/04011301-Dumbbell-Rear-Lunge_Thighs_360.gif"
+  }
+]

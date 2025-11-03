@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Planner30</title>
+</head>
+<body>
+<div class="container">
+  <div class="row" style="align-items:center; justify-content:space-between;">
+    <div>
+      <h1>Planner30 🏋️‍♂️</h1>
+    </div>
+    <div class="toggle">
+      <input type="checkbox" id="darkToggle" />
+      <label for="darkToggle" style="margin:0">🌙 Modo escuro</label>
+    </div>
+  </div>
+
+  <div class="nav">
+    <button id="tabPlanner">📅 Planner</button>
+    <button id="tabLibrary" class="ghost">📕 Biblioteca</button>
+  </div>
+
+  <section id="plannerView" class="">
+    <div class="box row">
+      <div class="col">
+        <label><b>Dia:</b></label>
+        <select id="daySelect"></select>
+      </div>
+      <div class="col">
+        <label><b>Status rápido</b></label>
+        <label><input type="checkbox" id="treinoFeito"> Treino feito</label>
+        <label><input type="checkbox" id="caminhada"> Caminhada 20min</label>
+        <label><input type="checkbox" id="alongamento"> Alongamento</label>
+      </div>
+    </div>
+
+    <div id="exercises" class="box">
+      <h2>Exercícios do Dia</h2>
+      <div id="exerciseList"></div>
+    </div>
+
+    <div class="box">
+      <h2>Timers ⏱️</h2>
+      <div class="timer-grid">
+        <div>
+          <h3>Descanso entre séries</h3>
+          <div class="row">
+            <div class="col"><label>Segundos: <input id="restSecs" type="number" min="10" max="300" value="75"></label></div>
+          </div>
+          <button id="restStart">Iniciar descanso</button>
+          <div id="restDisplay" class="small"></div>
+        </div>
+        <div>
+          <h3>Intervalos (HIIT/Cardio)</h3>
+          <div class="row">
+            <div class="col"><label>Trabalho (s): <input id="workSecs" type="number" min="10" max="120" value="30"></label></div>
+            <div class="col"><label>Descanso (s): <input id="easySecs" type="number" min="10" max="180" value="30"></label></div>
+            <div class="col"><label>Rodadas: <input id="rounds" type="number" min="1" max="30" value="10"></label></div>
+          </div>
+          <button id="hiitStart">Iniciar HIIT</button>
+          <button id="hiitStop" style="background:#c0392b">Parar</button>
+          <div id="hiitDisplay" class="small"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Notas do Dia</h2>
+      <textarea id="notes" rows="6" placeholder="Cargas, reps, RPE, sensações..."></textarea>
+      <div style="margin-top:8px">
+        <button id="saveDay">Salvar dia</button>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Progresso 🔥</h2>
+      <div class="small">Completos por semana (considera checkbox “Treino feito” por dia).</div>
+      <canvas id="progressChart" width="700" height="220"></canvas>
+    </div>
+  </section>
+
+  <section id="libraryView" class="hidden">
+    <div class="box">
+      <h2>Biblioteca de Exercícios</h2>
+      <div class="row">
+        <div class="col"><input id="searchInput" type="search" placeholder="Buscar por nome (EN)"></div>
+        <div class="col">
+          <select id="filterBody"><option value="">Filtrar por região</option></select>
+        </div>
+        <div class="col">
+          <select id="filterEquip"><option value="">Filtrar por equipamento</option></select>
+        </div>
+      </div>
+      <div id="libCount" class="small"></div>
+      <div id="libList"></div>
+    </div>
+  </section>
+
+  <div class="small">PWA: “Adicionar à Tela Inicial” e usar offline. 🟢</div>
+</div>
+
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>
